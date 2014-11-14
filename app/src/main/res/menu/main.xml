@@ -5,4 +5,8 @@
         android:title="@string/action_settings"
         android:orderInCategory="100"
         android:showAsAction="never" />
+    <item android:id="@+id/fancy_clock"
+        android:title="@string/fancy_clock"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
 </menu>

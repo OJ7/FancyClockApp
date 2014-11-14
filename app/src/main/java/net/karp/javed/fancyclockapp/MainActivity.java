@@ -157,6 +157,11 @@ public class MainActivity extends Activity {
             startActivity(intent);
             return true;
         }
+        else if (id == R.id.fancy_clock) {
+            Intent intent = new Intent(MainActivity.this, FancyClockActivity.class);
+            startActivity(intent);
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 }
