@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="net.karp.javed.fancyclockapp.FancyClockActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.33"
+            android:id="@+id/hourCol">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "@string/hour_units"
+                    android:id="@+id/hourUnits" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:layout_width="101dp"
+                        android:layout_height="211dp"
+                        android:id="@+id/imageView3"
+                        android:src="@drawable/Candle_black"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignTop="@+id/linearLayout" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:text="@string/hr_label"
+                android:id="@+id/hourLabel" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.33"
+            android:id="@+id/minCol"
+            android:showDividers="beginning|end">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/minute_units"
+                    android:layout_toEndOf="@+id/hourUnits"
+                    android:id="@+id/minuteUnits"
+                    android:layout_alignParentTop="true" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/linearLayout2">
+
+                    <ImageView
+                        android:layout_width="101dp"
+                        android:layout_height="211dp"
+                        android:id="@+id/imageView"
+                        android:src="@drawable/Candle_black"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignTop="@+id/linearLayout" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:text="@string/min_label"
+                android:layout_alignTop="@+id/textView6"
+                android:layout_alignStart="@+id/minuteUnits"
+                android:id="@+id/minutesLabel"
+                android:layout_marginLeft="0dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.33"
+            android:id="@+id/secCol">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/second_units"
+                    android:layout_alignBaseline="@+id/minuteUnits"
+                    android:layout_alignBottom="@+id/minuteUnits"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="0dp"
+                    android:id="@+id/secondUnits" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/linearLayout3">
+
+                    <ImageView
+                        android:layout_width="101dp"
+                        android:layout_height="211dp"
+                        android:id="@+id/imageView2"
+                        android:src="@drawable/Candle_black"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignTop="@+id/linearLayout" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:text="@string/sec_label"
+
+                android:layout_alignTop="@+id/minutesLabel"
+                android:layout_alignStart="@+id/secondUnits"
+                android:id="@+id/secondsLabel"
+                android:layout_marginLeft="0dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

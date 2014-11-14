@@ -18,8 +18,12 @@
         </activity>
         <activity
             android:name=".SimpleClockSettings"
-            android:parentActivityName=".MainActivity"
-            android:label="@string/title_activity_simple_clock_settings">
+            android:label="@string/title_activity_simple_clock_settings"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".FancyClockActivity"
+            android:label="@string/title_activity_fancy_clock" >
         </activity>
     </application>
 
