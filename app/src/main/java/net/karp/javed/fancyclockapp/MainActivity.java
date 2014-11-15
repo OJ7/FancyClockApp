@@ -41,8 +41,9 @@ public class MainActivity extends Activity {
         timeView = (TextView) findViewById(R.id.time_view);
         dateView = (TextView) findViewById(R.id.date_view);
 
-        Intent intent = new Intent(MainActivity.this, FancyClockActivity.class);
+        /*Intent intent = new Intent(MainActivity.this, FancyClockActivity.class);
         startActivity(intent);
+        */
 
         updateStuff();
         updateClock();
