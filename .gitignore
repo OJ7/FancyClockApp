@@ -24,9 +24,8 @@ proguard/
 
 # Log Files
 *.log
+
+
 .idea/workspace.xml
 .idea/misc.xml
-.idea/workspace.xml
-.idea/misc.xml
-.idea/workspace.xml
-.idea/workspace.xml
+app/src/main/res/layout/backup.xml
